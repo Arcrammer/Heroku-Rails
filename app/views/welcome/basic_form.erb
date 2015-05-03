@@ -1,0 +1,5 @@
+<h4>Basic Form</h4>
+<%= form_for :visitor, url: '/basicFormSubmitted/', html: {style: 'text-align: center;'} do |builder| %>
+  First Name: <%= builder.text_field :first_name %>
+  <%= builder.submit %>
+<% end %>
