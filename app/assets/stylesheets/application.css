@@ -18,10 +18,34 @@
  *= require_self
  */
 
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+label[for] {
+  cursor: pointer;
+  transition: color 75ms;
+}
+
+label[for]:hover {
+  color: grey;
+}
+
+label[for]:active {
+  color: black;
+}
+
 /* Structure */
-.container {
+body {
   background-color: rgba(0,0,0,0.035);
+}
+
+.container {
   margin: auto;
+  padding: 5% 0;
+  text-align: center;
   width: 80%;
 }
 
@@ -31,5 +55,6 @@ h4 {
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 2.15em;
   font-weight: 300;
+  margin-bottom: 10%;
   text-align: center;
 }
