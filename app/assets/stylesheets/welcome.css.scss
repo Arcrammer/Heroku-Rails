@@ -2,9 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/* Variables */
-$font-stack: "Helvetica Neue", "Helvetica", sans-serif;
-
 /* Content */
 label {
   font-size: 1.25em;
@@ -17,10 +14,7 @@ ul, ol {
 
 ul a:link, ul a:visited {
   color: blueviolet;
-  font: {
-    family: $font-stack;
-    size: 1.35em;
-  }
+  font-size: 1.35em;
   text-decoration: none;
   transition: all 100ms;
 }
@@ -32,6 +26,11 @@ ul a:hover {
 
 ul a:active {
   color: #522080;
+}
+
+.middish {
+  /* Push stuff down a bit */
+  margin-top: 16.5%;
 }
 
 /* Form Fields */
