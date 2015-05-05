@@ -14,7 +14,7 @@ ul, ol {
 
 ul a:link, ul a:visited {
   color: blueviolet;
-  font-size: 1.35em;
+  font-size: 1.15em;
   text-decoration: none;
   transition: all 100ms;
 }
@@ -26,6 +26,10 @@ ul a:hover {
 
 ul a:active {
   color: #522080;
+}
+
+li {
+  margin: 5% auto;
 }
 
 .middish {

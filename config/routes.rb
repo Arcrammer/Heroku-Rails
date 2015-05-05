@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :names
+
   resources :widgets
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -12,6 +14,7 @@ Rails.application.routes.draw do
   #   get 'products/:id' => 'catalog#view'
   get 'basicForm' => 'welcome#basic_form'
   post 'basicFormSubmitted' => 'welcome#basic_form_submitted'
+  get 'pullData' => 'welcome#pull_data'
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
