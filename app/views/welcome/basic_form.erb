@@ -1,7 +1,8 @@
 <% content_for :title, "#{Rails.application.config.site_title} / Basic Form" %>
 <h4>Basic Form</h4>
 <%= form_for :visitor, url: '/basicFormSubmitted/', html: {autocomplete: 'off', style: 'text-align: center;'} do |builder| %>
-  <label for="firstName">First Name: </label><br />
-  <%= builder.text_field :first_name, id: 'firstName' %><br />
+<!--  <label for="firstName">First Name: </label><br />-->
+  <%= builder.label "First name:", for: "firstName" %><br />
+  <%= builder.text_field :first_name, id: "firstName" %><br />
   <%= builder.submit("Greet me!") %>
 <% end %>
