@@ -169,3 +169,1092 @@ Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:34:33 -04
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:34:33 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:42:10 -0400
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.9.1) lib/puma/server.rb:490:in `handle_request'
+  puma (2.9.1) lib/puma/server.rb:361:in `process_client'
+  puma (2.9.1) lib/puma/server.rb:254:in `block in run'
+  puma (2.9.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.9.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:42:10 -0400
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.9.1) lib/puma/server.rb:490:in `handle_request'
+  puma (2.9.1) lib/puma/server.rb:361:in `process_client'
+  puma (2.9.1) lib/puma/server.rb:254:in `block in run'
+  puma (2.9.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.9.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:42:17 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.3ms)
+Completed 200 OK in 96ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:42:18 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:42:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:42:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:42:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:42:18 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:42:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:42:18 -0400
+
+
+Started GET "/basicForm/" for 127.0.0.1 at 2015-05-05 11:42:22 -0400
+Processing by WelcomeController#basic_form as HTML
+  Rendered welcome/basic_form.erb within layouts/application (5.2ms)
+Completed 200 OK in 26ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/basicFormSubmitted/" for 127.0.0.1 at 2015-05-05 11:42:24 -0400
+Processing by WelcomeController#basic_form_submitted as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/wXdkFsZOYPnKoyJSy4z1uxt8MEME3jn9e1iqIGHQ50=", "visitor"=>{"first_name"=>""}, "commit"=>"Greet me!"}
+  Rendered welcome/basic_form_submitted.erb within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:42:24 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:42:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:42:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:42:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:42:24 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:42:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:42:24 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:42:27 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.0ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:42:27 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:42:27 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:42:27 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:42:27 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:42:27 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:42:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:42:27 -0400
+
+
+Started GET "/basicForm/" for 127.0.0.1 at 2015-05-05 11:42:28 -0400
+Processing by WelcomeController#basic_form as HTML
+  Rendered welcome/basic_form.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basicForm/" for 127.0.0.1 at 2015-05-05 11:42:49 -0400
+Processing by WelcomeController#basic_form as HTML
+  Rendered welcome/basic_form.erb within layouts/application (1.0ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:42:49 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:42:49 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:42:49 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:42:49 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:42:49 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:42:49 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:42:49 -0400
+
+
+Started POST "/basicFormSubmitted/" for 127.0.0.1 at 2015-05-05 11:43:01 -0400
+Processing by WelcomeController#basic_form_submitted as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/wXdkFsZOYPnKoyJSy4z1uxt8MEME3jn9e1iqIGHQ50=", "visitor"=>{"first_name"=>"Alexander"}, "commit"=>"Greet me!"}
+  Rendered welcome/basic_form_submitted.erb within layouts/application (0.1ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:43:01 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:43:01 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:43:01 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:43:01 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:43:01 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:43:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:43:01 -0400
+
+
+Started POST "/basicFormSubmitted/" for 127.0.0.1 at 2015-05-05 11:44:09 -0400
+Processing by WelcomeController#basic_form_submitted as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/wXdkFsZOYPnKoyJSy4z1uxt8MEME3jn9e1iqIGHQ50=", "visitor"=>{"first_name"=>"Alexander"}, "commit"=>"Greet me!"}
+  Rendered welcome/basic_form_submitted.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:44:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:44:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:44:09 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:44:09 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:44:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:44:09 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:44:09 -0400
+
+
+Started POST "/basicFormSubmitted/" for 127.0.0.1 at 2015-05-05 11:44:14 -0400
+Processing by WelcomeController#basic_form_submitted as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/wXdkFsZOYPnKoyJSy4z1uxt8MEME3jn9e1iqIGHQ50=", "visitor"=>{"first_name"=>"Alexander"}, "commit"=>"Greet me!"}
+  Rendered welcome/basic_form_submitted.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:44:14 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:44:14 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:44:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:44:14 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:44:14 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:44:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:44:14 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:44:15 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.0ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:44:15 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:44:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:44:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:44:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:44:15 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:44:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:44:15 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:44:43 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.3ms)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:44:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:44:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:44:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:44:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:44:43 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:44:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:44:43 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:46:57 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (uninitialized class variable @@application_title in ActionView::CompiledTemplates):
+    1: <% content_for :title, @@application_title %>
+    2: <h4><%= @@application_title %></h4>
+    3: <ul>
+    4:   <li><a href="/basicForm/">Basic Form</a></li>
+  app/views/welcome/index.erb:1:in `_app_views_welcome_index_erb__3754801346313310420_70292555872880'
+
+
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:47:01 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (uninitialized class variable @@application_title in ActionView::CompiledTemplates):
+    1: <% content_for :title, "Heroku-Rails" %>
+    2: <h4><%= @@application_title %></h4>
+    3: <ul>
+    4:   <li><a href="/basicForm/">Basic Form</a></li>
+    5: </ul>
+  app/views/welcome/index.erb:2:in `_app_views_welcome_index_erb__3754801346313310420_70292556818340'
+
+
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:47:07 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.4ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:47:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:47:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:47:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:47:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:47:07 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:47:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:47:07 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:47:09 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (36.5ms)
+Completed 500 Internal Server Error in 38ms
+
+ActionView::Template::Error (undefined local variable or method `application_title' for #<#<Class:0x007fdc89971ab8>:0x007fdc8470bee0>):
+    1: <% content_for :title, "Heroku-Rails" %>
+    2: <h4><%= application_title %></h4>
+    3: <ul>
+    4:   <li><a href="/basicForm/">Basic Form</a></li>
+    5: </ul>
+  app/views/welcome/index.erb:2:in `_app_views_welcome_index_erb__3754801346313310420_70292545753720'
+
+
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:47:11 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (uninitialized class variable @@application_title in ActionView::CompiledTemplates):
+    1: <% content_for :title, "Heroku-Rails" %>
+    2: <h4><%= @@application_title %></h4>
+    3: <ul>
+    4:   <li><a href="/basicForm/">Basic Form</a></li>
+    5: </ul>
+  app/views/welcome/index.erb:2:in `_app_views_welcome_index_erb__3754801346313310420_70292541197000'
+
+
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:47:14 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (uninitialized class variable @@application_title in ActionView::CompiledTemplates):
+    1: <% content_for :title, "Heroku-Rails" %>
+    2: <h4><%= @@application_title %></h4>
+    3: <ul>
+    4:   <li><a href="/basicForm/">Basic Form</a></li>
+    5: </ul>
+  app/views/welcome/index.erb:2:in `_app_views_welcome_index_erb__3754801346313310420_70292541197000'
+
+
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:47:14 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (uninitialized class variable @@application_title in ActionView::CompiledTemplates):
+    1: <% content_for :title, "Heroku-Rails" %>
+    2: <h4><%= @@application_title %></h4>
+    3: <ul>
+    4:   <li><a href="/basicForm/">Basic Form</a></li>
+    5: </ul>
+  app/views/welcome/index.erb:2:in `_app_views_welcome_index_erb__3754801346313310420_70292541197000'
+
+
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:47:35 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (uninitialized class variable @@application_title in ActionView::CompiledTemplates):
+    1: <% content_for :title, "Heroku-Rails" %>
+    2: <h4><%= @@application_title %></h4>
+    3: <ul>
+    4:   <li><a href="/basicForm/">Basic Form</a></li>
+    5: </ul>
+  app/views/welcome/index.erb:2:in `_app_views_welcome_index_erb__3754801346313310420_70292541197000'
+
+
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:47:36 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (uninitialized class variable @@application_title in ActionView::CompiledTemplates):
+    1: <% content_for :title, "Heroku-Rails" %>
+    2: <h4><%= @@application_title %></h4>
+    3: <ul>
+    4:   <li><a href="/basicForm/">Basic Form</a></li>
+    5: </ul>
+  app/views/welcome/index.erb:2:in `_app_views_welcome_index_erb__3754801346313310420_70292541197000'
+
+
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:48:03 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (uninitialized class variable @@application_title in ActionView::CompiledTemplates):
+    1: <% content_for :title, "Heroku-Rails" %>
+    2: <h4><%= @@application_title %></h4>
+    3: <ul>
+    4:   <li><a href="/basicForm/">Basic Form</a></li>
+    5: </ul>
+  app/views/welcome/index.erb:2:in `_app_views_welcome_index_erb__3754801346313310420_70292541197000'
+
+
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:48:10 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:48:10 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:48:10 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:48:10 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:48:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:48:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:48:10 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:48:10 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:55:04 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `site_title' for #<Rails::Application::Configuration:0x007fdc839a9bd0>):
+    1: <% content_for :title, "Heroku-Rails" %>
+    2: <h4><%= Rails.application.config.site_title %></h4>
+    3: <ul>
+    4:   <li><a href="/basicForm/">Basic Form</a></li>
+    5: </ul>
+  app/views/welcome/index.erb:2:in `_app_views_welcome_index_erb__3754801346313310420_70292543954760'
+
+
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:56:18 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `site_title' for #<Rails::Application::Configuration:0x007fdc839a9bd0>):
+    1: <% content_for :title, "Heroku-Rails" %>
+    2: <h4><%= Rails.application.config.site_title %></h4>
+    3: <ul>
+    4:   <li><a href="/basicForm/">Basic Form</a></li>
+    5: </ul>
+  app/views/welcome/index.erb:2:in `_app_views_welcome_index_erb__3754801346313310420_70292543954760'
+
+
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:56:18 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (undefined method `site_title' for #<Rails::Application::Configuration:0x007fdc839a9bd0>):
+    1: <% content_for :title, "Heroku-Rails" %>
+    2: <h4><%= Rails.application.config.site_title %></h4>
+    3: <ul>
+    4:   <li><a href="/basicForm/">Basic Form</a></li>
+    5: </ul>
+  app/views/welcome/index.erb:2:in `_app_views_welcome_index_erb__3754801346313310420_70292543954760'
+
+
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/alexander/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:56:32 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (1.2ms)
+Completed 200 OK in 102ms (Views: 85.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:56:32 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:56:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:32 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:32 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:56:38 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.1ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:56:38 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:56:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:38 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:38 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:56:38 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:56:38 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:56:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:38 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:38 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:56:45 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:56:45 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:56:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:45 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:45 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:56:45 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.1ms)
+Completed 200 OK in 51ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:56:45 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:56:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:45 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:45 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:56:56 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.8ms)
+Completed 200 OK in 82ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:56:57 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:56:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:57 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:57 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:56:57 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:57:08 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:57:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:57:09 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:09 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:09 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:09 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:57:13 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:57:13 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:57:13 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:13 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:13 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:13 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:13 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:57:18 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:57:18 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:57:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:18 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:18 -0400
+
+
+Started GET "/basicForm/" for 127.0.0.1 at 2015-05-05 11:57:37 -0400
+Processing by WelcomeController#basic_form as HTML
+  Rendered welcome/basic_form.erb within layouts/application (5.0ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/basicForm/" for 127.0.0.1 at 2015-05-05 11:57:47 -0400
+Processing by WelcomeController#basic_form as HTML
+  Rendered welcome/basic_form.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:57:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:47 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:57:47 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:47 -0400
+
+
+Started POST "/basicFormSubmitted/" for 127.0.0.1 at 2015-05-05 11:57:50 -0400
+Processing by WelcomeController#basic_form_submitted as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/wXdkFsZOYPnKoyJSy4z1uxt8MEME3jn9e1iqIGHQ50=", "visitor"=>{"first_name"=>"Alexander"}, "commit"=>"Greet me!"}
+  Rendered welcome/basic_form_submitted.erb within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:57:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:57:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:51 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:51 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:57:53 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.1ms)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:57:53 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:57:53 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:53 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:53 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:53 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:57:53 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:58:01 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:58:01 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:58:01 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:58:01 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:58:01 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:58:01 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:58:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:58:01 -0400
+
+
+Started GET "/basicForm/" for 127.0.0.1 at 2015-05-05 11:58:02 -0400
+Processing by WelcomeController#basic_form as HTML
+  Rendered welcome/basic_form.erb within layouts/application (0.8ms)
+Completed 200 OK in 43ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/basicFormSubmitted/" for 127.0.0.1 at 2015-05-05 11:58:07 -0400
+Processing by WelcomeController#basic_form_submitted as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/wXdkFsZOYPnKoyJSy4z1uxt8MEME3jn9e1iqIGHQ50=", "visitor"=>{"first_name"=>"Alexander"}, "commit"=>"Greet me!"}
+  Rendered welcome/basic_form_submitted.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:58:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:58:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:58:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:58:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:58:07 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:58:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:58:07 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-05 11:58:08 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.1ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-05-05 11:58:08 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-05 11:58:08 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-05 11:58:08 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-05 11:58:08 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-05 11:58:08 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-05-05 11:58:08 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-05 11:58:08 -0400
