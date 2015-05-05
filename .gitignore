@@ -35,4 +35,4 @@ bower.json
 .powenv
 
 # Ignore logs
-.log
+*.log
