@@ -1,6 +1,12 @@
 class NamesController < ApplicationController
   before_action :set_name, only: [:show, :edit, :update, :destroy]
 
+  # GET /PullData/
+  def pull_data
+    # !important -- Remember this, Alexander. This was hard to figure out >_>
+    @name_pulled = Name.find(2).read_attribute('first_name')
+  end
+
   # GET /names
   # GET /names.json
   def index
@@ -62,13 +68,13 @@ class NamesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_name
-      @name = Name.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_name
+    @name = Name.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def name_params
-      params.require(:name).permit(:first_name, :middle_name, :last_name)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def name_params
+    params.require(:name).permit(:first_name, :middle_name, :last_name)
+  end
 end

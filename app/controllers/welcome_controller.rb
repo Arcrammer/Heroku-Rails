@@ -7,6 +7,4 @@ class WelcomeController < ApplicationController
   def basic_form_submitted
     @submitted_name = params[:visitor][:first_name]
   end
-  def pull_data
-  end
 end
