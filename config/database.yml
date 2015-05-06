@@ -17,7 +17,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  database: hrmaindatabase
+  database: Heroku-Rails
   username: alexander
   password: kt8xZ35Kx8fkd8G
   # For details on connection pooling, see rails configuration guide
