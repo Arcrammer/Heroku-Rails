@@ -1,13 +1,10 @@
 Rails.application.routes.draw do
   resources :names
-
   resources :widgets
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-
   root 'welcome#index'
 
   # Example of regular route:
@@ -15,6 +12,8 @@ Rails.application.routes.draw do
   get 'basicForm' => 'welcome#basic_form'
   post 'basicFormSubmitted' => 'welcome#basic_form_submitted'
   get 'PullData' => 'names#pull_data'
+  get 'WriteFile' => 'welcome#write_file'
+  post 'WriteFile' => 'welcome#write_file_submitted'
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

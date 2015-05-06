@@ -1,0 +1,8 @@
+<% content_for :title, "#{Rails.application.config.site_title} / Write to a File" %>
+<h4>Write to a File</h4>
+<%= form_for :file_to_write do |builder| %>
+  <%= builder.label "Text to Write:", for: "content" %><br />
+  <%= builder.text_field :content, id: "content" %><br />
+  <%= builder.submit("Write it!") %>
+<% end %>
+<a href="/">Get me out of here</a>

@@ -53,6 +53,7 @@ h4 {
 
 /* Links */
 a {
+  background-color: transparent;
   font-size: 0.95em;
   letter-spacing: 0.5px;
   text-decoration: none;
@@ -61,14 +62,17 @@ a {
 }
 
 a:link {
+  background-color: transparent;
   color: blueviolet;
 }
 
 a:visited {
+  background-color: transparent;
   color: blueviolet;
 }
 
 a:hover {
+  background-color: transparent;
   color: #A94DFF;
   text-decoration: underline;
 }
