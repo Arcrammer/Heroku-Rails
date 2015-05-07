@@ -1,6 +1,7 @@
 class WelcomeController < ApplicationController
   # GET /welcome
   def index
+    MySecondMailer.welcome_mail("Alexander")
   end
   def basic_form
   end
