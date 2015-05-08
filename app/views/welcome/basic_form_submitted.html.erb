@@ -1,3 +1,4 @@
 <% content_for :title, "#{Rails.application.config.site_title} / Hello, #{@submitted_name}!" %>
-<h4 class="middish">Hello, <%= @submitted_name %>!</h4>
+<h4><%= Rails.application.config.site_title %></h4>
+<p class="middish main-focus">Hello, <%= @submitted_name %>!</p>
 <a href="/">Get me out of here</a>
