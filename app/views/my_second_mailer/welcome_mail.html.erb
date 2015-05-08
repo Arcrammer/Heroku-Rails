@@ -1,3 +1,9 @@
-<h4>Hello, <%= @name %>!</h4>
-
-<p>This is a message from your Rails application. I just wanted to say I'm Italian.</p>
+<html>
+  <head>
+<body style="background-color: #fafafa;font-family: &quot;Helvetica Neue&quot;, &quot;Helvetica&quot;, sans-serif;">
+    <div class="container" style="margin: auto;width: 50%;">
+      <h4 style="color: #333;font-family: &quot;Helvetica Neue&quot;, &quot;Helvetica&quot;, sans-serif;font-size: 3em;font-weight: 600;letter-spacing: 2px;margin: 10% auto;text-align: center;text-transform: uppercase;text-shadow: 2px 0 0 rgba(0, 255, 255, 0.75), -3px 0 0 rgba(255, 0, 192, 0.5);">Hello, <%= @user.first_name %>!</h4>
+      <p style="color: #555;line-height: 175%;margin: auto;text-align: center;">This is a message from Heroku-Rails which is just demonstrating exactly how things are sent with Rails. You can see this <a href="http://github.com/Arcrammer/Heroku-Rails">over at GitHub</a>.</p>
+    </div> <!-- .container -->
+  </body>
+</html>

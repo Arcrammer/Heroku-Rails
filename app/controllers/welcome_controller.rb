@@ -1,3 +1,7 @@
+class User
+  attr_accessor :first_name, :email_address
+end
+
 class WelcomeController < ApplicationController
   # GET /welcome
   def index

@@ -1,8 +1,7 @@
 class MySecondMailer < ActionMailer::Base
   default :from => "Alexander with Heroku-Rails <>"
-  def welcome_mail(name)
-    @name = name
-    mail(:to => "", :subject => "Hello, #{name}! I'm Italian.")
-    Rails.logger.debug "Send Welcome Mail :D"
+  def welcome_mail(user)
+    @user = user
+    mail(:to => user.email_address, :subject => "Hello from Heroku-Rails, #{user.first_name}!")
   end
 end
