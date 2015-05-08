@@ -5,7 +5,10 @@ end
 class WelcomeController < ApplicationController
   # GET /welcome
   def index
-    MySecondMailer.welcome_mail("Alexander").deliver
+    me = User.new
+    me.first_name = "Alexander"
+    me.email_address = ""
+    MySecondMailer.welcome_mail(me).deliver
   end
   def basic_form
   end
