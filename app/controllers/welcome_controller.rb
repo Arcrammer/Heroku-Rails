@@ -8,7 +8,7 @@ class WelcomeController < ApplicationController
     me = User.new
     me.first_name = "Alexander"
     me.email_address = ""
-    MySecondMailer.welcome_mail(me).deliver
+    # MySecondMailer.welcome_mail(me).deliver
   end
   def basic_form
   end
@@ -27,5 +27,13 @@ class WelcomeController < ApplicationController
     File.open("FileWriteDemo.txt", "r") do |read_demo_file|
       @written_text = read_demo_file.read
     end
+  end
+  def send_mail
+  end
+  def send_mail_submitted
+    me = User.new
+    me.first_name = "Alexander"
+    me.email_address = ""
+    MySecondMailer.mail_demo(me, params[:send_mail][:mail_content]).deliver
   end
 end
