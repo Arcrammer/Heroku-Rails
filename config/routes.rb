@@ -9,13 +9,14 @@ Rails.application.routes.draw do
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-  get 'basicForm' => 'welcome#basic_form'
-  post 'basicFormSubmitted' => 'welcome#basic_form_submitted'
+  get 'BasicForm' => 'welcome#basic_form'
+  post 'BasicForm' => 'welcome#basic_form_submitted'
   get 'PullData' => 'names#pull_data'
   get 'WriteFile' => 'welcome#write_file'
   post 'WriteFile' => 'welcome#write_file_submitted'
   get 'SendMail' => 'welcome#send_mail'
   post 'SendMail' => 'welcome#send_mail_submitted'
+  
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

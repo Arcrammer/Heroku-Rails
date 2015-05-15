@@ -1,6 +1,6 @@
 <% content_for :title, "#{Rails.application.config.site_title} / Write to a File" %>
 <h4>Write to a File</h4>
-<%= form_for :file_to_write do |builder| %>
+<%= form_for :file_to_write, url: "/WriteFile/" do |builder| %>
   <%= builder.label "Text to Write:", for: "content" %><br />
   <%= builder.text_field :content, id: "content", autocomplete: "off" %><br />
   <%= builder.submit("Write it!") %>

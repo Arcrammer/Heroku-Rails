@@ -1,6 +1,6 @@
 <% content_for :title, "#{Rails.application.config.site_title} / Send Mail" %>
 <h4><%= Rails.application.config.site_title %></h4>
-<%= form_for :send_mail do |builder| %>
+<%= form_for :send_mail, url: "/SendMail/" do |builder| %>
   <%= builder.label "Message:", for: "messageBody" %><br />
   <%= builder.text_field :mail_content, id: "messageBody" %><br />
   <%= builder.submit("Send!") %>
